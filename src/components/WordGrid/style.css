@@ -1,0 +1,16 @@
+/* .row{
+    display: flex;
+} */
+
+.WordGrid{
+    display: flex;
+    flex-direction: column;
+    height: 900px;
+    width: 900px;
+}
+
+.wordGrid{
+    width: 900px;
+    height: 900px;
+    border : 1px solid black;
+}
