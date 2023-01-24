@@ -60,10 +60,8 @@ const IntrusSelectable = ({ text, isIntrus, idx, intrus }) => {
     if (isSelected) {
       if (selected === waited && selected !== '') {
         intr.current.style.backgroundColor = '#6666fa7c';
-        setTimeout(() => {
-          dispatch(IntrusActions.clearPos());
-          dispatch(IntrusActions.setActual({ actual: actual === listIntrus.length - 1 ? -1 : actual + 1, waited: intrus }));
-        }, 700);
+        dispatch(IntrusActions.clearPos());
+        dispatch(IntrusActions.setActual({ actual: actual === listIntrus.length - 1 ? -1 : actual + 1, waited: intrus }));
       }
       dispatch(IntrusActions.clearPos());
       setIsSelected(false);
