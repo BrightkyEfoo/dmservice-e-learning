@@ -22,15 +22,21 @@ const Memoires = () => {
   const dispatch = useDispatch();
   const timer = useSelector(state => state.timer.value);
   const [inter, setInter] = useState(0)
-  const handleClick = e => {
-    dispatch(TimerActions.set({ active: true, value: 300 }));
+  
 // setInter(setInterval(()=>{
   
 // }))
-  };
-
+  // };
+  // useEffect(() => {
+  //   first
+  
+  //   return () => {
+  //     second
+  //   }
+  // }, [third])
+  
   return (
-    <div className="memories-container" onClick={handleClick}>
+    <div className="memories-container" >
       <h1>Memoires</h1>
       <div>Ici vous devez juste selectionner une carte et retrouver la carte correspondante</div>
       <div className="card-container">{List}</div>

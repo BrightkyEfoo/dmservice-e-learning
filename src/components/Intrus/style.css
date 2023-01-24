@@ -1,0 +1,31 @@
+.intrus-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.intrus-list{
+    width: 600px;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.intru-list{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-items: center;
+    align-content: center;
+}
+.intru-selectable{
+    margin: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.intrus-title{
+    text-decoration: underline;
+}
