@@ -1,0 +1,36 @@
+.paragraphe-drop {
+  display: inline-block;
+  width: 100px;
+  height: 40px;
+  margin : 0 5px;
+  background-color: rgb(109, 85, 241);
+  position: relative;
+  top: 10px;
+  left : 2px
+}
+
+.droppable {
+  display: inline;
+  align-items: center;
+  gap: 10px;
+}
+
+.paragrah-container {
+    width: 800px;
+  padding: 10px;
+  margin: 10px;
+  text-align: left;
+  line-height: 35px;
+  /* align-items:; */
+}
+
+.desc{
+    margin: 20px;
+}
+.rep-list {
+  display: flex;
+  gap: 20px;
+  margin: 10px;
+  /* flex-direction: ; */
+}
+

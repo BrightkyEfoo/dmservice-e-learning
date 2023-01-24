@@ -1,0 +1,28 @@
+.card {
+  width: 100px;
+  height: 200px;
+  cursor : pointer;
+  border: 2px solid black;
+}
+.card > img {
+  width: 100px;
+  height: 200px;
+  object-fit: contain;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  width: 600px;
+  justify-items: center;
+  align-content: center;
+  margin: 25px;
+}
+
+.memories-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}

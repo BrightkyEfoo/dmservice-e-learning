@@ -12,3 +12,20 @@ export const norme = (a, b, x, y) => {
   let nor = Math.sqrt(X*X + Y*Y)
   return nor
 };
+
+
+export const secsToMin = (a)=>{
+  let mins = (a-a%60)/60
+  let secs = a%60
+  return `${mins} min : ${secs} s`
+}
+
+export const All = (condition , tab)=>{
+  let i = 0
+  for(i=0 ; i<tab.length ; i++){
+    if(!condition(tab[i])){
+      return false
+    }
+  }
+  return true
+}
