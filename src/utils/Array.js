@@ -14,3 +14,18 @@ export const randomSort = (tab , Compon)=> {
     return List
   }
 };
+
+export const treeToOne = (tab)=>{
+  const a = []
+  let i = 0
+  let j = 0
+  let k = 0
+  for(i = 0 ; i<tab.length ; i++){
+    for(j = 0 ; j < tab[i].length;j++){
+      for(k = 0; k < tab[i][j].length ; k++){
+        a.push(tab[i][j][k])
+      }
+    }
+  }
+  return a
+}

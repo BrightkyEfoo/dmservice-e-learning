@@ -37,19 +37,19 @@ export const vectors = [
     'PROGRAMMEUR'
   ],
   [
-    [7, 8],
-    [13, 8],
-    'ARTISAN'
-  ],
-  [
     [3, 8],
     [3, 13],
     'PILOTE'
   ],
   [
-    [2,1],
-    [2,8],
-    'ESPANGNOL'
+    [2, 9],
+    [2, 13],
+    'METEO'
+  ],
+  [
+    [0,0],
+    [13,0],
+    'BIBLIOTHECAIRE'
   ],
   [
     [12,2],

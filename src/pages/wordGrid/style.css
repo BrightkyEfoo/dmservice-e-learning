@@ -1,0 +1,37 @@
+.word-grid-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.gridFooter{
+    width: 420px;
+    
+}
+
+.head-of-footer{
+    background-color: rgba(187, 186, 186, 0.466);
+    text-align: left;
+    margin: 10px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.head-of-footer > div{
+    display: grid;
+    font-size: 0.8em;
+    margin : 10px;
+    font-weight: normal;
+    grid-template-columns: repeat(4,1fr);
+}
+.line-through {
+    text-decoration: line-through;
+}
+.words-span{
+    margin : 5px;
+}
+.small-timer{
+    font-weight: bold;
+    font-size: 2em;
+}

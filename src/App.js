@@ -16,21 +16,24 @@ import Synonyms from './components/dnd/Synonyms';
 import Paragraph from './components/paragraph/Paragraph';
 import Memoires from './components/Memoires/Memoires';
 import Intrus from './components/Intrus/Intrus';
+import WordGridPage from './pages/wordGrid/WordGridPage';
 function App() {
   const dispatch = useDispatch();
   const handleMouseMove = e => {
     dispatch(MousePosActions.set({ x: e.clientX, y: e.clientY }));
   };
+  // console.log('first')
   return (
     <Router>
       <div className="App" onMouseMove={handleMouseMove}>
         <Routes>
-          <Route path="/wordgrid" element={<WordGrid />} />
+          <Route path="/wordgrid" element={<WordGridPage />} />
           <Route path="/memories" element={<Memoires />} />
           <Route path="/antonyms" element={<Antonyms />} />
           <Route path="/synonyms" element={<Synonyms />} />
           <Route path="/paragraph" element={<Paragraph />} />
           <Route path="/intrus" element={<Intrus />} />
+          {/* <Route path="/wordgrid2" element={<WordGridPage />} /> */}
         </Routes>
       </div>
     </Router>

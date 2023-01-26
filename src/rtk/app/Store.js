@@ -6,6 +6,7 @@ import TimerReducer from "../features/timer"
 import FoundedReducer from "../features/founded"
 import memoireReducer from "../features/memoire"
 import IntrusReducer from "../features/Intrus"
+import WordGridReducer from "../features/WordGrid"
 
 const store = configureStore({
     reducer : {
@@ -16,6 +17,7 @@ const store = configureStore({
         founded : FoundedReducer,
         memoire : memoireReducer,
         intrus : IntrusReducer,
+        wordGrid : WordGridReducer,
     }
 })
 export default store
